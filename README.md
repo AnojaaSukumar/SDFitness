@@ -113,43 +113,20 @@ Licensed under the MIT License.
 - [ ] Advanced analytics with ML insights
 
 ---
-
-## 📊 Screenshots
-
-### Member Dashboard
-![Member Dashboard](./screenshots/member-dashboard.png)
-
-### AI Diet Plan Generator
-![Diet Plan Generator](./screenshots/diet-plan-generator.png)
-
-### Admin Panel
-![Admin Panel](./screenshots/admin-panel.png)
+---
 
 ---
 
-**Made with ❤️ for fitness enthusiasts and gym owners**
+## 💻 My Core Contributions (Progress Management & AI/ML Integration)
+As part of this full-stack system, my primary focus was split between building the end-to-end user progress analytics tracking and engineering the core AI/ML microservice gateway along with algorithmic ethics:
 
----
+### 1. 📊 Progress & Analytics Engineering (Full-Stack)
+* **Database & Routing**: Built core database models (`DailyProgress`, `BodyMeasurement`, `WeightLog`, `Feedback`) and implemented their respective REST controllers and secured API routes.
+* **Frontend & Admin Analytics**: Developed reactive UI components (`HealthMetricsTab`, `WeightHistoryTable`, `ActivityTimeline`) to map user data, and engineered the complete Admin Feedback review dashboard.
 
-## ✅ What to upload to GitHub (recommended for internships)
+### 2. 🧠 AI/ML Gateway & Algorithmic Ethics (Python/Flask)
+* **Flask API Gateway (`app.py`)**: Authored the primary microservice gateway connecting the MERN stack with backend ML logic. Orchestrated endpoints for live diet recommendations (`/recommend`), fuzzy-matching (`/fuzzy-match`), and asynchronous live price scraping tasks via background threading.
+* **Algorithmic Fairness Suite (`bias_analysis.py`)**: Implemented a comprehensive cryptographic and data fairness audit suite to scan for demographic bias across gender and age bands, ensuring equity in ML-driven diet recommendations.
 
-- Include:
-	- `docker-compose.yml`
-	- `Dockerfile`, `Dockerfile.dev`
-	- `.env.example`
-	- `.dockerignore`
-	- `frontend/`, `backend/`, `admin-pannel/`, `ml-service/`
-	- `README.md`
-
-- Exclude (do NOT commit):
-	- `node_modules/`, `venv/`
-	- `.env`, `.env.local`, `.env.*.local` (secrets)
-	- `dist/`, `build/`, large model artifacts
-
-Before pushing, make sure you have a `.env.example` (this repo contains one) and that any real secrets (DB URIs, API keys) are removed from tracked files.
-
-### Short repository checklist
-
-- Add a clear repository name (professional, not "final-final").
-- Provide a one-paragraph project summary at the top of `README.md`.
-- Add minimal setup steps showing `cp .env.example .env` and `docker-compose up --build`.
+### 3. ⚙️ Shared System Architecture & Settings
+* Co-authored and maintained unified system settings modules including site configurations, notification infrastructures, and role-based permissions layouts (`Setting.js`, `settingsRoutes.js`).
